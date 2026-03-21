@@ -1,0 +1,23 @@
+[project]
+name = "sales-agent"
+version = "0.1.0"
+description = "AI-powered marketplace trading assistant for buying and selling second-hand"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "httpx",
+    "beautifulsoup4",
+    "rich",
+    "pydantic",
+    "streamlit",
+    "plotly",
+    "keyring",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+    "pre-commit",
+]
